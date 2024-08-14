@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black;  */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* top level navigation */
+.navbar{
+    background-color: #f2df0a;
+
+    min-height: 100px;
+}
+
+.navbar .logo{
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(41, 27, 239);
+
+}
+
+.navbar .logo,ul{
+    /* margin-top: 15px; */
+}
+
+.navbar ul{
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.navbar a{
+    color: rgb(41, 27, 239);
+    text-decoration: none;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 15px;
+}
+
+/* Wander Overview */
+
+.header{
+    background-color: #f2df0a;
+    /* border: 5px solid red; */
+    height: 500px;
+}
+
+.header .text-content,.image-content{
+    width: 500px;
+    flex:1;
+}
+
+.text-content h1{
+    font-size: 62px;
+    font-weight: 700;
+    margin: 12px 0px;
+}
+
+.text-content p{
+    font-size: 18px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.text-content button{
+    border-radius: 25px;
+    padding: 8px;
+    margin: 5px 0px;
+}
+
+.header .image-content img{
+    border-radius: 25px;
+    border: 5px solid black;
+}
+
+.header .container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* first-section Tour Locations */
+.section-one h2{
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+.section-one .title{
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.box h3{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+.box p{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+.box img{
+    border: 5px solid black;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    object-fit:fill;
+    align-self: center;
+    margin: 20px 0px;
+}
+
+.section-one .container{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* section-two quotes */
+.section-two{
+    background-color:rgb(238, 234, 234);
+    height: 300px;
+}
+
+.section-two blockquote{
+    font-size: 36px;
+    color: rgb(73, 71, 71);
+}
+
+.section-two cite{
+    color: rgb(73, 71, 71);
+    margin: 20px 0px;
+    align-self: flex-end;
+}
+
+ .section-two .container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section three more info  */
+
+.card{
+    margin:5%;
+    height: 150px;
+}
+.card .container{
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(41, 27, 239);
+    padding: 20px;
+    border-radius: 25px;
+
+}
+
+.sign-up-text p{
+    color: white;
+    font-size: 18px;
+    align-self: flex-start;
+}
+
+.sign-up-text h3{
+    color: white;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.card button{
+    background-color: #f2df0a;
+    border-radius: 25px;
+    padding: 8px;
+    margin: 5px 0px;
+
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
