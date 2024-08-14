@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 2px solid black;  */
 }
 
 body{
@@ -10,7 +9,7 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -56,13 +55,16 @@ body{
 /* Wander Overview */
 
 .header{
-    background-color: #f2df0a;
-    /* border: 5px solid red; */
-    height: 500px;
+    background-color: #f2df0a;   
 }
 
-.header .text-content,.image-content{
-    width: 500px;
+.header .text-content{
+    height: 100%;
+    flex:1;
+}
+
+.header .image-content{
+    height: 100%;
     flex:1;
 }
 
@@ -93,6 +95,7 @@ body{
     display: flex;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* first-section Tour Locations */
@@ -134,12 +137,18 @@ body{
 .section-one .container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box{
+    /* height: 100%;
+    flex: 1 1 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 400px;
+    width: 400px;
+
 }
 
 
@@ -147,11 +156,14 @@ body{
 .section-two{
     background-color:rgb(238, 234, 234);
     height: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .section-two blockquote{
     font-size: 36px;
     color: rgb(73, 71, 71);
+    text-align: center;
 }
 
 .section-two cite{
@@ -162,10 +174,11 @@ body{
 
  .section-two .container{
     display: flex;
-    height: 100%;
+    max-height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* section three more info  */
